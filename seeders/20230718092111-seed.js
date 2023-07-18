@@ -16,7 +16,7 @@ module.exports = {
       ],
       {}
     );
-    const users = await queryInterface.sequelize.query(`SELECT id FROM users`);
+    const users = await queryInterface.sequelize.query(`SELECT id FROM "users"`);
 
     const userId = users[0][0].id;
 
@@ -34,7 +34,7 @@ module.exports = {
       {}
     );
     //
-    const posts = await queryInterface.sequelize.query(`SELECT id FROM posts`);
+    const posts = await queryInterface.sequelize.query(`SELECT id FROM "posts"`);
 
     const postId = posts[0][0].id;
 
